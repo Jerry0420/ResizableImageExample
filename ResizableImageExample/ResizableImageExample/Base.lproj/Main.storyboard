@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="c0u-iN-vPa">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ResizableImageExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pikachu" translatesAutoresizingMaskIntoConstraints="NO" id="g3W-hJ-ciQ">
+                                <rect key="frame" x="37" y="20" width="300" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="25X-Bu-bvK"/>
+                                    <constraint firstAttribute="height" constant="150" id="ZR7-Ux-x2Y"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bAR-ae-4GY">
+                                <rect key="frame" x="37" y="170" width="300" height="150"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slicingPika" translatesAutoresizingMaskIntoConstraints="NO" id="8XD-Mb-pa5">
+                                <rect key="frame" x="37.5" y="470" width="300" height="150"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pikachu" translatesAutoresizingMaskIntoConstraints="NO" id="Ch3-Rx-ZQd">
+                                <rect key="frame" x="37" y="320" width="300" height="150"/>
+                                <rect key="contentStretch" x="0.29999999999999999" y="0.0" width="0.20000000000000001" height="1"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8XD-Mb-pa5" firstAttribute="top" secondItem="Ch3-Rx-ZQd" secondAttribute="bottom" id="2qW-fX-hIk"/>
+                            <constraint firstItem="bAR-ae-4GY" firstAttribute="width" secondItem="g3W-hJ-ciQ" secondAttribute="width" id="5lW-uU-AOD"/>
+                            <constraint firstItem="Ch3-Rx-ZQd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E9k-6E-leW"/>
+                            <constraint firstItem="g3W-hJ-ciQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Kpu-d0-bdC"/>
+                            <constraint firstItem="Ch3-Rx-ZQd" firstAttribute="width" secondItem="bAR-ae-4GY" secondAttribute="width" id="L2t-VC-JAn"/>
+                            <constraint firstItem="8XD-Mb-pa5" firstAttribute="width" secondItem="Ch3-Rx-ZQd" secondAttribute="width" id="MAD-mC-cDv"/>
+                            <constraint firstItem="8XD-Mb-pa5" firstAttribute="height" secondItem="Ch3-Rx-ZQd" secondAttribute="height" id="QHg-S0-7t8"/>
+                            <constraint firstItem="g3W-hJ-ciQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qgh-oJ-199"/>
+                            <constraint firstItem="8XD-Mb-pa5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SOe-zF-Noc"/>
+                            <constraint firstItem="Ch3-Rx-ZQd" firstAttribute="height" secondItem="bAR-ae-4GY" secondAttribute="height" id="TBi-xs-7Bf"/>
+                            <constraint firstItem="bAR-ae-4GY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gog-ys-CXF"/>
+                            <constraint firstItem="Ch3-Rx-ZQd" firstAttribute="top" secondItem="bAR-ae-4GY" secondAttribute="bottom" id="hZO-3Z-XOF"/>
+                            <constraint firstItem="bAR-ae-4GY" firstAttribute="top" secondItem="g3W-hJ-ciQ" secondAttribute="bottom" id="ySE-o2-34t"/>
+                            <constraint firstItem="bAR-ae-4GY" firstAttribute="height" secondItem="g3W-hJ-ciQ" secondAttribute="height" id="yrZ-jf-csw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="bAR-ae-4GY" id="pf1-u0-wkS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Contents Center View Controller-->
+        <scene sceneID="HSq-u6-78E">
+            <objects>
+                <viewController id="c0u-iN-vPa" customClass="ContentsCenterViewController" customModule="ResizableImageExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Djl-JI-Kgr"/>
+                        <viewControllerLayoutGuide type="bottom" id="G5w-9d-Q30"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="y7s-DK-9Y2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yfh-op-97w">
+                                <rect key="frame" x="37.5" y="20" width="300" height="150"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="ae2-dA-48j"/>
+                                    <constraint firstAttribute="width" constant="300" id="e5v-eP-P7w"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yfh-op-97w" firstAttribute="top" secondItem="Djl-JI-Kgr" secondAttribute="bottom" id="1bh-Ee-CMf"/>
+                            <constraint firstItem="yfh-op-97w" firstAttribute="centerX" secondItem="y7s-DK-9Y2" secondAttribute="centerX" id="I2v-Jd-Noe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentsCenterView" destination="yfh-op-97w" id="1EB-UN-RTp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0oc-bv-olH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="916" y="35"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pikachu" width="150" height="150"/>
+        <image name="slicingPika" width="112" height="150"/>
+    </resources>
+</document>
